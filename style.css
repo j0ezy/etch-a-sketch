@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 1px solid black;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.gridRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onHover{
+    background-color: aqua;
+}

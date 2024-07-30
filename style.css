@@ -1,5 +1,6 @@
 *{
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(240, 237, 237);
 }
 
 .header{
@@ -27,13 +28,14 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .box{
     border: 1px solid black;
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 10px;
+    min-height: 10px;
 }
 
 .gridRow{

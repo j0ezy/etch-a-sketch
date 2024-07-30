@@ -33,7 +33,10 @@ sizeButton.addEventListener("click", () =>{
     const gridBox = document.querySelectorAll(".box")
     for(let box of gridBox){
         box.addEventListener("mouseenter", () =>{
-            box.classList.toggle("onHover")
+            box.classList.add("onHover")
+        })
+        box.addEventListener("click", () =>{
+            box.classList.remove("onHover")
         })
     }
 })

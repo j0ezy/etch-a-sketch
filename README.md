@@ -7,6 +7,10 @@ for the size.
 After the grid is generated the user can mouseover the boxes in the grid to color them in.
 If the user wants to remove the color from a box, he has to click on the box.
 
-Example of a 50x50 grid :
+Example of a 50x50 grid (V1 -> no color or opacity):
 
 ![etch-a-sketch](etch-a-sketch.png)
+
+Example of a 50x50 grid (V2 -> color and opacity)
+
+![etch-a-sketch2](etch-a-sketch2.png)

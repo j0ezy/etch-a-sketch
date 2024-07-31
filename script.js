@@ -1,6 +1,13 @@
 const containerGrid = document.querySelector(".container")
 const sizeButton = document.querySelector(".btn")
 
+function randomColor(){
+    const randomR = Math.floor(Math.random() * 255)
+    const randomG = Math.floor(Math.random() * 255)
+    const randomB = Math.floor(Math.random() * 255)
+    return `rgb(${randomR},${randomG},${randomB})`
+}
+
 sizeButton.addEventListener("click", () =>{
 
     // Remove the grid
@@ -33,10 +40,11 @@ sizeButton.addEventListener("click", () =>{
     const gridBox = document.querySelectorAll(".box")
     for(let box of gridBox){
         box.addEventListener("mouseenter", () =>{
-            box.classList.add("onHover")
+            let color = randomColor()
+            box.setAttribute("style", `background-color: ${color}`)
         })
         box.addEventListener("click", () =>{
-            box.classList.remove("onHover")
+            box.style.removeProperty("background-color")
         })
     }
 })

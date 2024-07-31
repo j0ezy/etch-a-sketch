@@ -39,9 +39,14 @@ sizeButton.addEventListener("click", () =>{
     // Hover effect over box
     const gridBox = document.querySelectorAll(".box")
     for(let box of gridBox){
+        let opacity = 0
+        let color = randomColor()
         box.addEventListener("mouseenter", () =>{
-            let color = randomColor()
-            box.setAttribute("style", `background-color: ${color}`)
+            box.setAttribute("style", `background-color: ${color}; opacity: ${opacity}%`)
+            opacity += 10
+            if(opacity > 100){
+                opacity = 100
+            } 
         })
         box.addEventListener("click", () =>{
             box.style.removeProperty("background-color")
